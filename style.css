@@ -52,7 +52,7 @@ body {
 
 
 button {
-	width: 30%;
+	width: 40%;
 	padding: 10px;
 	background-color: white;
 	border-style: solid;
@@ -67,4 +67,66 @@ button {
 button:hover {
 	background-color: #000;
 	color: white;
+}
+
+@media (max-width: 768px) {
+	#main-contents {
+		width: 100%;
+		display:flex;
+		flex-direction: column;
+	}
+	/*.main-content {*/
+		/*width: 100%;*/
+	/*}*/
+	#main-contents-img{
+		width: 88%;
+	}
+	#main-contents-description {
+		width: 100%;
+	}
+
+	#myCart {
+		width: 85%;
+
+	}
+
+	#miniCart {
+		width: 90%;
+		left: 3%;
+		right: 1px;
+
+	}
+}
+
+@media (min-width: 769px) and (max-width:1263px) {
+	#main-contents {
+		width: 80%;
+		margin: auto;
+		display: flex;
+		justify-content: space-around;
+	}
+	#main-contents-img{
+		width: 50%;
+	}
+	#main-contents-description {
+		width: 100%;
+	}
+
+	#myCart {
+		width: 85%;
+
+	}
+
+	#miniCart {
+display:none;
+	position: absolute;
+	width: 25vw;
+	top: 39px;
+	right: 6.5%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--border-lightgrey);
+	background-color: white;
+	padding: 10px;
+	}
 }
