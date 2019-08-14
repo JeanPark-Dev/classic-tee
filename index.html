@@ -8,28 +8,28 @@
 <body>
 	<div id="myCart">
 		<a href="#" onclick="myCart()">My Cart (<span id="sum-item">0</span>)</a>
-		<div id="miniCart" style="display: none;">testest</div>
+		<div id="miniCart" style="display: none;"></div>
 	</div>
 
-	<div>
-		<img src="classic-tee.jpg">
-		<div>
-			<h4>Classic Tee</h4>
+	<div id="main-contents">
+		<img id="main-contents-img" class="main-content" src="classic-tee.jpg">
+		<div id="main-contents-description" class="main-content">
+			<h4 style="color: #222222;">Classic Tee</h4>
 			<hr>
-			<p>$75.00</p>
+			<p style="color: #222222;">$75.00</p>
 			<hr>
-			<p>Dolor sit amet, sonsectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus</p>
+			<p style="color:  #888888">Dolor sit amet, sonsectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus</p>
 
-			<div>
+			<div id="size-selector">
 				<p>SIZE <span style="color: #C90000;">*</span></p>
-				<form>
+				<form id="color-choice-form">
 					<div>
 						<input type="radio" name="size" value="S"><label>S</label>
 						<input type="radio" name="size" value="M"><label>M</label>
 						<input type="radio" name="size" value="L"><label>L</label>
 					</div>
 				</form>
-				<button type="button">Add to cart</button>
+				<button type="button" onclick="selectSize()">Add to cart</button>
 			</div>
 		</div>
 
