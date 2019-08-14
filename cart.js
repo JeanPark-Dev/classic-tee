@@ -14,19 +14,17 @@ function addToCart() {
 			
 			console.log(s);
 			console.log(s_name);
-			// cartHTML += "<div class=\'Item\'>"
-			// 	+ "<img class=\"item-img\" src=\"classic-tee.jpg\">"+
-			// 	+"<div>"+
-			// 	"Classic Tee" + "<br>" +
-			// 	s + "x " + "$75.00<br>" +
-			// 	"Size: " + s_name+
-			// 	"</div><br>"+
-			// 	"</div>";
-			cartHTML += "<p>"+s + s_name+"</p>"
+			cartHTML += "<div class=\'Item\'>"
+				+ "<img class=\"item-img\" src=\"classic-tee.jpg\">"+
+				+"<div>"+
+				"Classic Tee" + "<br>" +
+				s + "x " + "$75.00<br>" +
+				"Size: " + s_name+
+				"</div><br>"+
+				"</div>";
 		}
 	}
-	// console.log(sizes);
-	// console.log(size_name);
+
 	miniCart.innerHTML = cartHTML;
 	document.getElementById("sum-item").innerHTML = item_sum.toString();
 }
