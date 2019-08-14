@@ -2,9 +2,14 @@
 <html>
 <head>
 	<title>Developer-Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="cart.js"></script>
 </head>
 <body>
-	<div>My cart</div>
+	<div>
+		<a href="#"> My cart</a>
+		<div id="miniCart"></div>
+	</div>
 
 	<div>
 		<img src="classic-tee.jpg">
@@ -19,9 +24,9 @@
 				<p>SIZE *</p>
 				<form>
 					<div>
-						<input type="radio"><label>S</label>
-						<input type="radio"><label>M</label>
-						<input type="radio"><label>L</label>
+						<input type="radio" name="size" value="S"><label>S</label>
+						<input type="radio" name="size" value="M"><label>M</label>
+						<input type="radio" name="size" value="L"><label>L</label>
 					</div>
 				</form>
 				<button type="button">Add to cart</button>

@@ -1,0 +1,11 @@
+:root {
+	--font-color-dark: #222222;
+	--font-color-bright: #888888;
+	--header-background: #F6F6F7;
+	--border-lightgrey: #CCCCCC;
+	--border-darkgrey: #222222;
+}
+
+body {
+	font-family: sans-serif;
+}
