@@ -6,9 +6,9 @@
 	<script type="text/javascript" src="cart.js"></script>
 </head>
 <body>
-	<div>
-		<a href="#"> My cart</a>
-		<div id="miniCart"></div>
+	<div id="myCart">
+		<a href="#" onclick="myCart()">My Cart (<span id="sum-item">0</span>)</a>
+		<div id="miniCart" style="display: none;">testest</div>
 	</div>
 
 	<div>
@@ -21,7 +21,7 @@
 			<p>Dolor sit amet, sonsectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus dolor sit amet, consectetur adipiscing elit. Haec et tu ita posuisti, at verba vestra sunt. Quod autem ratione actum est, id officium appellamus</p>
 
 			<div>
-				<p>SIZE *</p>
+				<p>SIZE <span style="color: #C90000;">*</span></p>
 				<form>
 					<div>
 						<input type="radio" name="size" value="S"><label>S</label>

@@ -11,15 +11,38 @@ function addToCart() {
 		if(sizes[i] > 0) {
 			var s =sizes[i].toString();
 			var s_name = size_name[i];
-			console.log(s);
-			console.log(s_name);
+			
+
+			cartHTML += "<div class=\'Item\'>"
+				+ "<img class=\"item-img\" src=\"classic-tee.jpg\">"+
+				+"<div>"+
+				"Classic Tee" + "<br>" +
+				s + "x " + "$75.00<br>" +
+				"Size: " + s_name+
+				"</div><br>"+
+				"</div>";
 		}
 	}
+	miniCart.innerHTML = cartHTML;
+	document.getElementById("sum-item").innerHTML = item_sum.toString();
 }
 
 function selectSize() {
 	var element = document.getElementsByName("size");
 
-
+	for (i = 0; i < elements.length; i++){
+		if(elements[i].checked) {
+			sizes[i] += 1;
+		}
+	}
+	addToCart();
 }
 
+function myCart(){
+	var miniCart = document.getElementById("miniCart");
+	if (miniCart.style.display === "none") {
+		miniCart.style.display = "block";
+	} else {
+		miniCart.style.display = "none";
+	}
+}
